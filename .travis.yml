@@ -1,0 +1,9 @@
+language: generic
+dist: trusty
+
+git:
+  depth: 1
+
+script:
+  - make build
+  - docker run -it --rm nkf nkf -v
