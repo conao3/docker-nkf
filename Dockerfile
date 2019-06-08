@@ -34,4 +34,5 @@ RUN apk update && apk upgrade
 
 COPY --from=0 /usr/local /usr/local
 
-CMD ["nkf"]
+ENTRYPOINT ["nkf"]
+CMD ["-v"]
